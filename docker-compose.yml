@@ -1,0 +1,17 @@
+version: '1.0'
+
+services:
+  dev_db:
+    image: postgres:15
+    restart: on-failure
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+  dev_test_db:
+    image: postgres:15
+    restart: always
+    ports:
+      - "5436:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
