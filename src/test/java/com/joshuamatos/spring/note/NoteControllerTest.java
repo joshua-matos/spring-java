@@ -131,5 +131,4 @@ class NoteControllerTest {
                 .andExpect(status().isOk());
         verify(noteService).deleteNoteById(noteId);
     }
-
 }

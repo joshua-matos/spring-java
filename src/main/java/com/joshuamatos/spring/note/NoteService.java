@@ -14,7 +14,6 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class NoteService {
-
     private final NoteRepository noteRepository;
 
     public List<NoteDto> getAllNotes() {
@@ -50,9 +49,7 @@ public class NoteService {
         if(noteRequest == null) {
             throw new IllegalArgumentException("NoteRequest cannot be null");
         }
-
         var note = noteRepository.findById(id).orElseThrow(() -> new RuntimeException("Note not found"));
-
         if(!ObjectUtils.isEmpty(noteRequest.getTitle())) {
             note.setTitle(noteRequest.getTitle());
         }

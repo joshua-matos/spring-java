@@ -16,7 +16,6 @@ This course will be split into series, each series will have a separate branch i
 1. [x] Series 1: Java / Spring Boot - setting up a Rest Controller and JPA Entity with test.
 2. [x] Series 2: Set up your TypeScript React App and connect it to your Spring Boot Application
 3. [x] Series 3: Using MUI and the Grid System, designing Layout and Theme
-4. [x] Series 4: Connecting to Supabase and adding a Message Hub
 
 
 ## Application Diagram

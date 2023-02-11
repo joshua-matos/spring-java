@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.Instant;
@@ -27,5 +28,8 @@ public class Note {
 
     @CreatedDate
     private Instant createdDate = Instant.now();
+
+    @LastModifiedDate
+    private Instant lastModifiedDate = Instant.now();
 
 }
