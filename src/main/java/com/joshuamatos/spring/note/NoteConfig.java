@@ -4,10 +4,13 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//This can be used to create some default data in the database
+//Simply uncomment the @Bean annotation and the @Configuration annotation
+//You will have to update the test cases to reflect the new data.
+//@Configuration
 public class NoteConfig {
 
-    @Bean
+//    @Bean
     public CommandLineRunner noteCommandLineRunner(NoteRepository noteRepository) {
 
         return args -> {
