@@ -7,6 +7,7 @@ export type ControlledInputProps = {
   control: any;
   errors: any;
 };
+// TODO: add error props
 
 const ControlledInput = ({ name, label, control, errors }: ControlledInputProps) => {
   return (
@@ -24,8 +25,6 @@ const ControlledInput = ({ name, label, control, errors }: ControlledInputProps)
           }}
           variant="standard"
           label={label}
-<!--           error={!!errors.TODO}
-          helperText={errors.TODO?.message} -->
           fullWidth
         />
       )}
