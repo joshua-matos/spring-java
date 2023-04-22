@@ -15,35 +15,7 @@ projects.  Let’s step into it!
 This course will be split into series, each series will have a separate branch in the GitHub repository.
 1. [x] Series 1: Java / Spring Boot - setting up a Rest Controller and JPA Entity with test.
 2. [x] Series 2: Set up your TypeScript React App and connect it to your Spring Boot Application
-3. [x] Series 3: Using MUI and the Grid System, designing Layout and Theme
 
-
-## Application Diagram
-
-```mermaid
-graph TD
-    A[React/Client] <--> |HTTP| B{Sring Framework}
-    B ---> A
-    B --> C(Spring Boot) --> F[Rest Controller - Control Layer]
-    X-1("Note Service - Service Layer") --> F
-    X-2("Note Repository - DAO Layer") --> X-1
-    X-2 --> D
-    D[JPA] --> |Hibernate| E[Entity: Note]
- 
-  
-    PA[Hardware] -->|BIOS| PB{Kernel}
-    PB <--> PC{OS} --> PF[Docker] --> C
-    PX-1("dev_postgres_db - Container") -->PF
-    PX-2("Postgres - Database") --> PX-1
-    PX-2 ---> PD
-    PD[Note - Table]
-  
-    ZA{SUPABASE} ----> |API| A
-    ZA --> |Database| ZB("Postgres")
-    ZC-2("User Settings - Table")
-    ZC-3("Message Hub - Table")
-  
-```
 
 ## Required programs
 1. Docker - https://www.docker.com/products/docker-desktop/
